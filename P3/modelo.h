@@ -1,0 +1,83 @@
+/*	Prácticas de Informática Gráfica
+
+	Grupo C					Curso 2023-24
+ 	
+	Codigo base para la realización de las practicas de IG
+	
+	Estudiante: 
+
+=======================================================
+	G. Arroyo, J.C. Torres 
+	Dpto. Lenguajes y Sistemas Informticos
+	(Univ. de Granada)
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details 
+ http://www.gnu.org/copyleft/gpl.html
+
+=======================================================
+
+	 modelo.h
+*/
+
+/**
+	Funcion de redibujado. Se ejecuta con los eventos postRedisplay
+**/
+void Dibuja (void);
+
+/**
+	Funcion de fondo
+**/
+void idle (int v);
+
+/**
+	Funcion de inicializacion del modelo y de las variables globales
+**/
+void initModel ();
+
+/**
+	Funcion de para cambiar de modo de visualización
+**/
+void setModo(const int &M);
+
+/**
+	Funcion de para cambiar iluminación
+**/
+void cambiarIlum();
+
+/**
+	Funcion de para cambiar de suavidad
+**/
+void cambiarSuavidad();
+
+/**
+	Funcion de para cambiar a animacion o no
+**/
+void cambiarAnimacion();
+
+//FUNCIONES PARA CAMBIAR VELOCIDAD
+void EscalaVelMas();
+void EscalaVelMenos();
+void PosVelMas();
+void PosVelMenos();
+void RotVelMas();
+void RotVelMenos();
+
+//FUNCIONES PARA CAMBIAR ANGULOS / POSICIONES
+void AnguloMas1();
+void AnguloMenos1();
+void AnguloMas2();
+void AnguloMenos2();
+void AnguloMas3();
+void AnguloMenos3();
+void EscalaMas();
+void EscalaMenos();
+void PosicionMas();
+void PosicionMenos();
